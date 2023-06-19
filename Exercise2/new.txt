@@ -1,0 +1,17 @@
+sudo apt update
+sudo apt install apache2
+sudo apt install php libapache2-mod-php php-mysql
+# create a file /var/www/html/info.php  with following content
+<?php
+phpinfo();
+?> 
+centos steps
+sudo dnf install httpd
+sudo systemctl enable httpd
+sudo systemctl start httpd
+sudo dnf install php php-mysqlnd
+sudo systemctl restart httpd
+# create a file /var/www/html/info.php  with following content
+<?php
+phpinfo();
+?>
